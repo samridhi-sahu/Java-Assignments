@@ -7,7 +7,7 @@ public class A02Q12 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter amount in INR : ");
         double inr = sc.nextInt();
-        double usd = inr * 76.23;
-        System.out.println("Amount in USD 710 : " + usd + " USD");
+        double usd = inr / 76.23;
+        System.out.println("Amount in USD is : " + usd + " USD");
     }
 }
