@@ -1,10 +1,10 @@
 // Write a java program to print given pattern
 
-public class A04Q08 {
+public class A04Q09 {
     public static void main(String[] args) {
         int i;
-        for (i = 1; i <= 4; i++) {
-            for (int j = 3; j >= i; j--) {
+        for (i = 4; i >= 1; i--) {
+            for (int j = 4; j > i; j--) {
                 System.out.print(" ");
             }
             for (int j = 1; j <= i; j++) {
@@ -16,4 +16,5 @@ public class A04Q08 {
             System.out.println();
         }
     }
+
 }
