@@ -1,5 +1,5 @@
-// 1. Write a program to print 3rd level all node in a tree
-public class q1 {
+// 3. Write a program to print elements of a tree at a given level using recursion.
+public class q3 {
     static class Node {
         int data;
         Node lc;
@@ -34,15 +34,12 @@ public class q1 {
         }
 
         public void levelnodes(Node p, int level) {
-            for (int i = 0; i < level - 1; i++) {
-                p = p.lc;
+            if (level == 0)
+                System.out.print(p.data + " ");
+            else if (level > 0) {
+                levelnodes(p.lc, level - 1);
+                levelnodes(p.rc, level - 1);
             }
-            System.out.print(p.lc.data + " " + p.rc.data + " ");
-            p = root;
-            for (int i = 0; i < level - 1; i++) {
-                p = p.rc;
-            }
-            System.out.print(p.lc.data + " " + p.rc.data);
         }
     }
 
